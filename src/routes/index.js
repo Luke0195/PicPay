@@ -79,8 +79,8 @@ export default function Navigation() {
           // eslint-disable-next-line react/prop-types
           title: "",
 
-          tabBarIcon: ({ color, size }) => (
-            <PayButton name="pay" size={size} color={color} />
+          tabBarIcon: ({ color, size, focused }) => (
+            <PayButton name="pay" size={size} color={color} focused={focused} />
           ),
         }}
       />

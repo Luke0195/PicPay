@@ -11,6 +11,7 @@ import {
 } from "./styled";
 
 import Suggestions from "../../components/Suggestions";
+import Actives from "../../components/Actives";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
           <AntDesignIcons name="gift" color="#00ff6c" size={30} />
         </Header>
         <Suggestions />
+        <Actives />
       </Container>
     </Wrapper>
   );

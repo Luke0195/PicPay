@@ -12,10 +12,11 @@ export const Container = styled.ScrollView``;
 
 export const Header = styled.View`
   height: 50px;
-  padding: 16px 16px 0 16px;
+  padding: 0 16px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 8px;
 `;
 
 export const BalanceContainer = styled.View``;

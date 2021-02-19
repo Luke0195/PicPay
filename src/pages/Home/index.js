@@ -10,6 +10,8 @@ import {
   Balance,
 } from "./styled";
 
+import Suggestions from "../../components/Suggestions";
+
 export default function Home() {
   return (
     <Wrapper>
@@ -26,6 +28,7 @@ export default function Home() {
           </BalanceContainer>
           <AntDesignIcons name="gift" color="#00ff6c" size={30} />
         </Header>
+        <Suggestions />
       </Container>
     </Wrapper>
   );

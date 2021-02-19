@@ -47,6 +47,8 @@ export default function Navigation() {
         style: {
           backgroundColor: "#131418",
           borderTopColor: "rgba(255,255,255, 0.2)",
+          height: 60,
+          paddingBottom: 4,
         },
         activeTintColor: "#fff",
         inactiveTintColor: "#92929c",

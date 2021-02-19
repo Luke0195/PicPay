@@ -69,11 +69,14 @@ export const Bold = styled.Text`
 
 export const CardBody = styled.View`
   margin-top: 10px;
+  flex-direction: row;
+  align-items: center;
 `;
 export const CardUser = styled.Text`
   color: #fff;
-  font-size: 18px;
-  font-family: "Roboto-Medium";
+  font-size: 16px;
+  font-family: "Roboto-Light";
+  padding-right: 8px;
 `;
 
 export const CardFooter = styled.View`

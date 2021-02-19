@@ -12,6 +12,8 @@ import {
 
 import Suggestions from "../../components/Suggestions";
 import Actives from "../../components/Actives";
+import Tips from "../../components/Tips";
+import Banner from "../../components/Banner";
 
 export default function Home() {
   return (
@@ -31,6 +33,8 @@ export default function Home() {
         </Header>
         <Suggestions />
         <Actives />
+        <Tips />
+        <Banner />
       </Container>
     </Wrapper>
   );

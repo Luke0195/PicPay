@@ -2,6 +2,7 @@ import React from "react";
 import FeatherIcons from "react-native-vector-icons/Feather";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import Ionicons from "react-native-vector-icons/Ionicons";
 import avatar from "../../images/avatar.png";
 
 import {
@@ -47,14 +48,15 @@ export default function Actives() {
             </Description>
           </CardHeader>
           <CardBody>
-            <CardUser> Lucas Santos</CardUser>
+            <CardUser>Have a nice beer mate</CardUser>
+            <Ionicons name="beer-outline" size={20} color="#de8b26" />
           </CardBody>
           <CardFooter>
             <Details>
               <Value> R$ 18,00</Value>
               <Divider />
               <FeatherIcons name="lock" size={16} color="#fff" />
-              <DateLabel>há 15 minutos atrás</DateLabel>
+              <DateLabel>at 15 minutes later</DateLabel>
 
               <Actions>
                 <Options>

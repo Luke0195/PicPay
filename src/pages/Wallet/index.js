@@ -40,13 +40,20 @@ import {
 
 export default function Wallet() {
   const [isVisible, setIsVisible] = useState(false);
+  const [useBalance, setUsebalance] = useState(true);
 
   function handleToggleVisible() {
     setIsVisible((prevState) => !prevState);
   }
+
+  function handleToogleIsBalance() {
+    setUsebalance((prevState) => !prevState);
+  }
   return (
     <Wrapper>
-      <Header colors={["#52e78c", "#1aB563"]}>
+      <Header
+        colors={useBalance ? ["#52e78c", "#1aB563"] : ["#d3d3d3", "#868686"]}
+      >
         <HeaderContainer>
           <Title> Seu Saldo PayNow</Title>
           <BalanceContainer>
@@ -55,7 +62,11 @@ export default function Wallet() {
               <BalanceBold> {isVisible ? "78.871,63" : "-------"}</BalanceBold>
             </Balance>
             <EyeButton onPress={handleToggleVisible}>
-              <FeatherIcons name="eye" size={23} color="#fff" />
+              <FeatherIcons
+                name={isVisible ? "eye" : "eye-off"}
+                size={23}
+                color="#fff"
+              />
             </EyeButton>
           </BalanceContainer>
           <Info>Seu saldo está devendo rendendo 100% do seu CME</Info>
@@ -74,7 +85,7 @@ export default function Wallet() {
       </Header>
       <UserBalance>
         <UserBalanceTitle> Usar Saldo ao pagar </UserBalanceTitle>
-        <Switch />
+        <Switch value={useBalance} onValueChange={handleToogleIsBalance} />
       </UserBalance>
       <PaymentMethods>
         <PaymentMethodsTitle> formas de pagemento </PaymentMethodsTitle>

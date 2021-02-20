@@ -53,6 +53,7 @@ export default function Navigation() {
         activeTintColor: "#fff",
         inactiveTintColor: "#92929c",
       }}
+      initialRouteName="Wallet"
     >
       <Tab.Screen
         name="Home"

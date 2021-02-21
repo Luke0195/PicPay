@@ -33,6 +33,9 @@ export default function Home() {
         </Header>
         <Suggestions />
         <Actives />
+        <Actives />
+        <Actives />
+        <Actives />
         <Tips />
         <Banner />
       </Container>

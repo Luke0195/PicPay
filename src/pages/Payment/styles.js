@@ -6,7 +6,7 @@ export const Wrapper = styled.SafeAreaView`
 `;
 
 export const Header = styled.View`
-  height: 130px;
+  height: 120px;
   background: #1e222b;
   padding: 10px 16px;
 `;
@@ -58,4 +58,16 @@ export const Actions = styled.TouchableOpacity`
 export const Label = styled.Text`
   font-size: 17px;
   color: rgba(255, 255, 255, 0.5);
+`;
+
+export const Body = styled.View`
+  margin-top: 25px;
+  padding: 0 16px;
+`;
+
+export const BodyTitle = styled.Text`
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Roboto-Regular";
 `;

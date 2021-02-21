@@ -1,6 +1,7 @@
 import React from "react";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Iconicos from "react-native-vector-icons/Ionicons";
+import Slider from "../../components/Slider";
 import {
   Wrapper,
   Header,
@@ -10,6 +11,8 @@ import {
   Title,
   Actions,
   Label,
+  Body,
+  BodyTitle,
 } from "./styles";
 
 export default function Payment() {
@@ -40,6 +43,10 @@ export default function Payment() {
           </Actions>
         </HeaderFooter>
       </Header>
+      <Body>
+        <BodyTitle> Destaques </BodyTitle>
+        <Slider />
+      </Body>
     </Wrapper>
   );
 }

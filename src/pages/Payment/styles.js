@@ -71,3 +71,38 @@ export const BodyTitle = styled.Text`
   line-height: 28px;
   font-family: "Roboto-Regular";
 `;
+
+export const Content = styled.View`
+  background: #428a4e;
+  margin: 25px 16px 0 16px;
+  padding: 8px 3px;
+  border-radius: 8px;
+`;
+
+export const ContentTitle = styled.Text`
+  font-size: 16px;
+  font-family: "Roboto-Medium";
+  margin: 5px;
+  color: #fff;
+`;
+
+export const ContentText = styled.Text`
+  color: #e1ede3;
+  margin: 4px;
+`;
+
+export const Footer = styled.View`
+  margin: 35px auto;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-bottom-color: #52a861;
+`;
+
+export const FooterTitle = styled.Text`
+  color: #40ff6c;
+  font-size: 15px;
+  margin-left: 4px;
+  text-transform: uppercase;
+`;

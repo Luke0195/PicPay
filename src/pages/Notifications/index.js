@@ -1,10 +1,13 @@
 import React from "react";
 import { View, Text } from "react-native";
+import { Wrapper, NotificationsTitle, Container } from "./styled";
 
 export default function Notifications() {
   return (
-    <View>
-      <Text> Notifications Screen</Text>
-    </View>
+    <Container>
+      <Wrapper>
+        <NotificationsTitle> Notificações </NotificationsTitle>
+      </Wrapper>
+    </Container>
   );
 }

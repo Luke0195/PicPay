@@ -52,7 +52,8 @@ export const IconTitle = styled.Text`
 export const IconLabel = styled.Text`
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
+  line-height: 24px;
   text-align: left;
   font-family: "Roboto-Light";
-  margin-top: 4px;
+  margin-top: 8px;
 `;
